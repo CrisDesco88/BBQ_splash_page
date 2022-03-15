@@ -1,4 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap');
+
 html,body {
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
 }
+
+
+
+.hero {
+    background-color: #404040;
+    background-image: url(./images/ribs.jpg);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 1em 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+.hero-paragraph {
+    border-top: 5px solid #F18119;
+    color: #F18119;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    order: -1;
+    margin-top: 0;
+    padding-top: 0.25em;
+    
+}
+
+.hero-title {
+    font-weight: 300;
+    font-size: 2.25rem;
+    color: #fff;
+}
+
+.hero-title span{
+    font-weight: 900;
+}
+
+.hero-subtitle {
+    color: #F18119;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.3125rem;
+}
+
+.form{
+    padding: 1.5em;
+    text-align: center;
+}
+
+.form-title {
+    margin-bottom: 0;
+    font-size: 1.3125rem;
+}
+
+.form-subtitle {
+    color:#F18119;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-paragraph {
+    color: #5A5A5A;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    background: #FFFFFF;
+    border: 1px solid #818181;
+    margin-bottom: 1em;
+    padding: 0; 
+    border-radius: 7px;
+    opacity: 1;
+    text-align: center;
+    color: #404040;
+    opacity: 0.5;
+    height: 37px;
+    width: 253px;
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background: linear-gradient(270deg, #FF713B, #FFA51D);
+    border-radius: 7px;
+    border: none;
+    height: 37px;
+    font-size: 0.625rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    width: 253px;
+    padding: 0;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: scale(1.05);
+    
+}
+
+.form-bottom-paragraph {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+.hero *,
+.form * {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media  screen and (min-width: 600px) {
+    body {
+        font-size: 1.125rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle, .form-title {
+        font-size: 1.75rem;
+    }
+
+    main {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .hero, .form {
+        width: 50%;
+    }
+
+    .hero {
+        padding: 0 1em;
+    }
+
+    .form {
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+
+
